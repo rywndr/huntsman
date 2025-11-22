@@ -29,29 +29,6 @@ export function About() {
                                 businessName: BUSINESS_NAME,
                             })}
                         </p>
-                        <div className="pt-4">
-                            <h3 className="text-xl font-semibold mb-3">
-                                {t("about.whyTitle")}
-                            </h3>
-                            <ul className="space-y-2 text-muted-foreground">
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span>{t("about.reason1")}</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span>{t("about.reason2")}</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span>{t("about.reason3")}</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <span className="text-primary mt-1">✓</span>
-                                    <span>{t("about.reason4")}</span>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
 
                     <div className="relative h-[400px] lg:h-[600px] rounded-xl overflow-hidden shadow-xl">

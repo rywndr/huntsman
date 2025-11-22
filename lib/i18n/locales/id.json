@@ -25,14 +25,9 @@
     },
     "about": {
         "title": "Tentang {{businessName}}",
-        "intro": "Selamat datang di {{businessName}}, destinasi terpercaya untuk perlengkapan berburu dan outdoor berkualitas premium di Indonesia. Sejak tahun {{year}}, kami telah berkomitmen menyediakan peralatan terbaik bagi para pemburu dan petualang di seluruh Nusantara.",
-        "paragraph1": "Dengan pengalaman lebih dari satu dekade di industri ini, kami memahami kebutuhan para pemburu dan petualang Indonesia. Koleksi produk kami yang dipilih dengan cermat memastikan Anda mendapatkan peralatan yang handal, tahan lama, dan berkinerja tinggi untuk menghadapi berbagai kondisi medan di Indonesia.",
-        "paragraph2": "Baik Anda seorang pemburu berpengalaman atau baru memulai perjalanan petualangan Anda, {{businessName}} siap melengkapi Anda dengan peralatan yang tepat. Kami bangga dengan kualitas produk yang luar biasa, pelayanan pelanggan yang ramah, dan dedikasi kami terhadap komunitas berburu Indonesia.",
-        "whyTitle": "Mengapa Memilih Kami?",
-        "reason1": "Perlengkapan berburu dan outdoor berkualitas premium",
-        "reason2": "Konsultasi ahli dan dukungan pelanggan yang responsif",
-        "reason3": "Tersedia di berbagai platform e-commerce terpercaya",
-        "reason4": "Melayani seluruh Indonesia dengan pengiriman cepat"
+        "intro": "Selamat datang di {{businessName}}. Sejak tahun {{year}}, kami telah berkomitmen menyediakan peralatan bagi para pemburu dan petualang di seluruh Nusantara.",
+        "paragraph1": "Dengan pengalaman lebih dari satu dekade di industri ini, kami memahami kebutuhan para pemburu dan petualang Indonesia. Dengan koleksi produk kami Anda mendapatkan peralatan yang berkualitas, dan durable untuk menghadapi situasi.",
+        "paragraph2": "Baik Anda seorang pemburu berpengalaman atau baru memulai perjalanan petualangan Anda, {{businessName}} siap melengkapi Anda dengan peralatan yang tepat."
     },
     "platforms": {
         "badge": "Platform Tersedia",

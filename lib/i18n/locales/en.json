@@ -25,14 +25,9 @@
     },
     "about": {
         "title": "About {{businessName}}",
-        "intro": "Welcome to {{businessName}}, your trusted destination for premium hunting and outdoor gear in Indonesia. Since {{year}}, we have been committed to providing the best equipment for hunters and adventurers across the archipelago.",
-        "paragraph1": "With over a decade of experience in the industry, we understand the needs of Indonesian hunters and adventurers. Our carefully curated product collection ensures you get reliable, durable, and high-performance equipment to face various terrain conditions in Indonesia.",
-        "paragraph2": "Whether you're an experienced hunter or just starting your adventure journey, {{businessName}} is ready to equip you with the right gear. We pride ourselves on exceptional product quality, friendly customer service, and our dedication to the Indonesian hunting community.",
-        "whyTitle": "Why Choose Us?",
-        "reason1": "Premium quality hunting and outdoor gear",
-        "reason2": "Expert consultation and responsive customer support",
-        "reason3": "Available on various trusted e-commerce platforms",
-        "reason4": "Serving all of Indonesia with fast shipping"
+        "intro": "Welcome to {{businessName}}. Since {{year}}, we have been committed to providing equipment for hunters and adventurers across the archipelago.",
+        "paragraph1": "With over a decade of experience in the industry, we understand the needs of Indonesian hunters and adventurers. With our product collection you get quality and durable equipment to face any situation.",
+        "paragraph2": "Whether you're an experienced hunter or just starting your adventure journey, {{businessName}} is ready to equip you with the right gear."
     },
     "platforms": {
         "badge": "Available Platforms",
