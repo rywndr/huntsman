@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { Mail, MessageCircle } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import {
     Dialog,
     DialogContent,
@@ -20,6 +21,7 @@ import {
 
 export function ContactsCTA() {
     const [open, setOpen] = useState(false);
+    const { t } = useTranslation();
 
     return (
         <Dialog open={open} onOpenChange={setOpen}>
@@ -27,16 +29,16 @@ export function ContactsCTA() {
                 <Button
                     size="icon-lg"
                     className="fixed bottom-6 right-6 z-40 size-14 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110"
-                    aria-label="Hubungi kami"
+                    aria-label={t("contactCta.ariaLabel")}
                 >
                     <MessageCircle className="size-6" />
                 </Button>
             </DialogTrigger>
             <DialogContent className="sm:max-w-md">
                 <DialogHeader>
-                    <DialogTitle>Hubungi Kami</DialogTitle>
+                    <DialogTitle>{t("contactCta.title")}</DialogTitle>
                     <DialogDescription>
-                        Pilih cara yang Anda inginkan untuk menghubungi kami
+                        {t("contactCta.description")}
                     </DialogDescription>
                 </DialogHeader>
                 <div className="grid gap-4 py-4">

@@ -1,0 +1,83 @@
+{
+    "nav": {
+        "home": "Beranda",
+        "about": "Tentang",
+        "platforms": "Platform",
+        "contact": "Kontak"
+    },
+    "business": {
+        "name": "Hunting Gear",
+        "motto": "Art of Hunting"
+    },
+    "hero": {
+        "slide1": {
+            "title": "Peralatan Berburu Premium",
+            "subtitle": "Perlengkapan berkualitas untuk setiap petualangan"
+        },
+        "slide2": {
+            "title": "Perlengkapan Outdoor",
+            "subtitle": "Tahan lama untuk segala kondisi"
+        },
+        "slide3": {
+            "title": "Sejak 2009",
+            "subtitle": "Lebih dari 15 tahun melayani komunitas berburu"
+        }
+    },
+    "about": {
+        "title": "Tentang {{businessName}}",
+        "intro": "Selamat datang di {{businessName}}, destinasi terpercaya untuk perlengkapan berburu dan outdoor berkualitas premium di Indonesia. Sejak tahun {{year}}, kami telah berkomitmen menyediakan peralatan terbaik bagi para pemburu dan petualang di seluruh Nusantara.",
+        "paragraph1": "Dengan pengalaman lebih dari satu dekade di industri ini, kami memahami kebutuhan para pemburu dan petualang Indonesia. Koleksi produk kami yang dipilih dengan cermat memastikan Anda mendapatkan peralatan yang handal, tahan lama, dan berkinerja tinggi untuk menghadapi berbagai kondisi medan di Indonesia.",
+        "paragraph2": "Baik Anda seorang pemburu berpengalaman atau baru memulai perjalanan petualangan Anda, {{businessName}} siap melengkapi Anda dengan peralatan yang tepat. Kami bangga dengan kualitas produk yang luar biasa, pelayanan pelanggan yang ramah, dan dedikasi kami terhadap komunitas berburu Indonesia.",
+        "whyTitle": "Mengapa Memilih Kami?",
+        "reason1": "Perlengkapan berburu dan outdoor berkualitas premium",
+        "reason2": "Konsultasi ahli dan dukungan pelanggan yang responsif",
+        "reason3": "Tersedia di berbagai platform e-commerce terpercaya",
+        "reason4": "Melayani seluruh Indonesia dengan pengiriman cepat"
+    },
+    "platforms": {
+        "badge": "Platform Tersedia",
+        "title": "Belanja di Platform Favorit Anda",
+        "description": "Temukan perlengkapan berburu dan outdoor premium kami di berbagai platform e-commerce terpercaya. Terpercaya sejak {{year}}.",
+        "visitStore": "Kunjungi Toko",
+        "trustBadge": "Melayani komunitas berburu dan outdoor Indonesia sejak {{year}}",
+        "shopee": "Belanja produk kami di Shopee",
+        "tokopedia": "Temukan kami di Tokopedia",
+        "lazada": "Kunjungi toko kami di Lazada",
+        "bukalapak": "Belanja di Bukalapak",
+        "tiktokShop": "Jelajahi TikTok Shop kami",
+        "blibli": "Temukan produk kami di Blibli"
+    },
+    "contact": {
+        "title": "Hubungi Kami",
+        "description": "Ada pertanyaan? Kami siap membantu. Hubungi kami melalui email atau WhatsApp",
+        "email": {
+            "title": "Email Kami",
+            "description": "Kirim pesan kapan saja"
+        },
+        "whatsapp": {
+            "title": "WhatsApp",
+            "description": "Chat dengan kami"
+        }
+    },
+    "contactCta": {
+        "title": "Hubungi Kami",
+        "description": "Pilih cara yang Anda inginkan untuk menghubungi kami",
+        "ariaLabel": "Hubungi kami"
+    },
+    "footer": {
+        "description": "Toko perlengkapan berburu dan outdoor terpercaya di Indonesia. Peralatan berkualitas untuk setiap petualangan.",
+        "established": "Berdiri sejak",
+        "quickLinks": "Tautan Cepat",
+        "navigation": "Navigasi",
+        "platforms": "Platform",
+        "openingHours": "Jam Operasional",
+        "everyday": "Setiap Hari",
+        "contactTitle": "Kontak",
+        "copyright": "Hak cipta dilindungi."
+    },
+    "language": {
+        "id": "Bahasa Indonesia",
+        "en": "English",
+        "switchLanguage": "Ganti Bahasa"
+    }
+}

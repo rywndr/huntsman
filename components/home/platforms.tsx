@@ -1,9 +1,54 @@
+"use client";
+
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
-import { PLATFORMS, ESTABLISHED_YEAR } from "@/lib/constants";
+import { ESTABLISHED_YEAR } from "@/lib/constants";
 
 export function Platforms() {
+    const { t } = useTranslation();
+
+    const platforms = [
+        {
+            name: "Shopee",
+            logo: "/platforms/shopee.png",
+            description: t("platforms.shopee"),
+            url: "#",
+        },
+        {
+            name: "Tokopedia",
+            logo: "/platforms/tokopedia-logo.png",
+            mascot: "/platforms/tokopedia-mascot.png",
+            description: t("platforms.tokopedia"),
+            url: "#",
+        },
+        {
+            name: "Lazada",
+            logo: "/platforms/lazada.png",
+            description: t("platforms.lazada"),
+            url: "#",
+        },
+        {
+            name: "Bukalapak",
+            logo: "/platforms/bukalapak.png",
+            description: t("platforms.bukalapak"),
+            url: "#",
+        },
+        {
+            name: "TikTok Shop",
+            logo: "/platforms/tiktok-shop.png",
+            description: t("platforms.tiktokShop"),
+            url: "#",
+        },
+        {
+            name: "Blibli",
+            logo: "/platforms/blibli.png",
+            description: t("platforms.blibli"),
+            url: "#",
+        },
+    ];
+
     return (
         <section
             id="platforms"
@@ -15,21 +60,19 @@ export function Platforms() {
                 <div className="text-center mb-12">
                     <div className="inline-block mb-4">
                         <span className="text-sm font-semibold text-primary bg-primary/10 px-4 py-1.5 rounded-full">
-                            Platform Tersedia
+                            {t("platforms.badge")}
                         </span>
                     </div>
                     <h2 className="scroll-m-20 text-3xl font-bold tracking-tight lg:text-4xl mb-4">
-                        Belanja di Platform Favorit Anda
+                        {t("platforms.title")}
                     </h2>
                     <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                        Temukan perlengkapan berburu dan outdoor premium kami di
-                        berbagai platform e-commerce terpercaya. Terpercaya
-                        sejak {ESTABLISHED_YEAR}.
+                        {t("platforms.description", { year: ESTABLISHED_YEAR })}
                     </p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-                    {PLATFORMS.map((platform) => (
+                    {platforms.map((platform) => (
                         <div
                             key={platform.name}
                             className="group border-2 rounded-xl p-6 bg-card hover:shadow-xl hover:border-primary/20 transition-all duration-300 hover:-translate-y-1"
@@ -85,7 +128,7 @@ export function Platforms() {
                                             rel="noopener noreferrer"
                                             className="inline-flex items-center gap-2"
                                         >
-                                            Kunjungi Toko
+                                            {t("platforms.visitStore")}
                                             <ExternalLink className="size-3.5" />
                                         </a>
                                     </Button>
@@ -97,10 +140,7 @@ export function Platforms() {
 
                 <div className="mt-16 text-center">
                     <p className="text-sm text-muted-foreground">
-                        Melayani komunitas berburu dan outdoor Indonesia sejak{" "}
-                        <span className="font-semibold text-primary">
-                            {ESTABLISHED_YEAR}
-                        </span>
+                        {t("platforms.trustBadge", { year: ESTABLISHED_YEAR })}
                     </p>
                 </div>
             </div>

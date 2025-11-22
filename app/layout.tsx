@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { BUSINESS_NAME, BUSINESS_MOTTO } from "@/lib/constants";
+import { I18nProvider } from "@/components/providers/i18n-provider";
 
 const inter = Inter({
     subsets: ["latin"],
@@ -50,7 +51,7 @@ export default function RootLayout({
     return (
         <html lang="en" className="scroll-smooth">
             <body className={`${inter.variable} font-sans antialiased`}>
-                {children}
+                <I18nProvider>{children}</I18nProvider>
             </body>
         </html>
     );

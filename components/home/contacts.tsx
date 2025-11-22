@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import { Mail } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import {
     BUSINESS_EMAIL,
     WHATSAPP_NUMBER,
@@ -7,16 +10,17 @@ import {
 } from "@/lib/constants";
 
 export function Contacts() {
+    const { t } = useTranslation();
+
     return (
         <section id="contact" className="py-16 md:py-24 bg-muted/30">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
                     <h2 className="scroll-m-20 text-3xl font-bold tracking-tight lg:text-4xl mb-4">
-                        Hubungi Kami
+                        {t("contact.title")}
                     </h2>
                     <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                        Ada pertanyaan? Kami siap membantu. Hubungi kami melalui
-                        email atau WhatsApp
+                        {t("contact.description")}
                     </p>
                 </div>
 
@@ -31,10 +35,10 @@ export function Contacts() {
                         </div>
                         <div className="text-center">
                             <h3 className="text-xl font-semibold mb-2">
-                                Email Kami
+                                {t("contact.email.title")}
                             </h3>
                             <p className="text-muted-foreground text-sm mb-3">
-                                Kirim pesan kapan saja
+                                {t("contact.email.description")}
                             </p>
                             <p className="text-primary font-medium">
                                 {BUSINESS_EMAIL}
@@ -60,10 +64,10 @@ export function Contacts() {
                         </div>
                         <div className="text-center">
                             <h3 className="text-xl font-semibold mb-2">
-                                WhatsApp
+                                {t("contact.whatsapp.title")}
                             </h3>
                             <p className="text-muted-foreground text-sm mb-3">
-                                Chat dengan kami langsung
+                                {t("contact.whatsapp.description")}
                             </p>
                             <p className="text-primary font-medium">
                                 {WHATSAPP_NUMBER}

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 import {
     Sheet,
     SheetContent,
@@ -11,14 +12,19 @@ import {
     SheetTrigger,
 } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
-import {
-    BUSINESS_NAME,
-    BUSINESS_MOTTO,
-    NAVIGATION_LINKS,
-} from "@/lib/constants";
+import { BUSINESS_NAME, BUSINESS_MOTTO } from "@/lib/constants";
+import { LanguageSwitcher } from "./language-switcher";
 
 export function Navbar() {
     const [open, setOpen] = useState(false);
+    const { t } = useTranslation();
+
+    const navigationLinks = [
+        { name: t("nav.home"), href: "#home" },
+        { name: t("nav.about"), href: "#about" },
+        { name: t("nav.platforms"), href: "#platforms" },
+        { name: t("nav.contact"), href: "#contact" },
+    ];
 
     return (
         <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b">
@@ -47,7 +53,7 @@ export function Navbar() {
                     </Link>
 
                     <div className="hidden md:flex items-center gap-1">
-                        {NAVIGATION_LINKS.map((link) => (
+                        {navigationLinks.map((link) => (
                             <Link
                                 key={link.name}
                                 href={link.href}
@@ -56,6 +62,7 @@ export function Navbar() {
                                 {link.name}
                             </Link>
                         ))}
+                        <LanguageSwitcher />
                     </div>
 
                     <div className="md:hidden">
@@ -72,8 +79,11 @@ export function Navbar() {
                                 <SheetHeader>
                                     <SheetTitle>Menu</SheetTitle>
                                 </SheetHeader>
+                                <div className="px-4 py-2 border-b">
+                                    <LanguageSwitcher />
+                                </div>
                                 <nav className="flex flex-col gap-4 mt-8">
-                                    {NAVIGATION_LINKS.map((link) => (
+                                    {navigationLinks.map((link) => (
                                         <Link
                                             key={link.name}
                                             href={link.href}

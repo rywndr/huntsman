@@ -1,0 +1,83 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "platforms": "Platforms",
+        "contact": "Contact"
+    },
+    "business": {
+        "name": "Hunting Gear",
+        "motto": "Art of Hunting"
+    },
+    "hero": {
+        "slide1": {
+            "title": "Premium Hunting Gear",
+            "subtitle": "Quality equipment for every adventure"
+        },
+        "slide2": {
+            "title": "Outdoor Essentials",
+            "subtitle": "Built to withstand any condition"
+        },
+        "slide3": {
+            "title": "Since 2009",
+            "subtitle": "Over 15 years serving the hunting community"
+        }
+    },
+    "about": {
+        "title": "About {{businessName}}",
+        "intro": "Welcome to {{businessName}}, your trusted destination for premium hunting and outdoor gear in Indonesia. Since {{year}}, we have been committed to providing the best equipment for hunters and adventurers across the archipelago.",
+        "paragraph1": "With over a decade of experience in the industry, we understand the needs of Indonesian hunters and adventurers. Our carefully curated product collection ensures you get reliable, durable, and high-performance equipment to face various terrain conditions in Indonesia.",
+        "paragraph2": "Whether you're an experienced hunter or just starting your adventure journey, {{businessName}} is ready to equip you with the right gear. We pride ourselves on exceptional product quality, friendly customer service, and our dedication to the Indonesian hunting community.",
+        "whyTitle": "Why Choose Us?",
+        "reason1": "Premium quality hunting and outdoor gear",
+        "reason2": "Expert consultation and responsive customer support",
+        "reason3": "Available on various trusted e-commerce platforms",
+        "reason4": "Serving all of Indonesia with fast shipping"
+    },
+    "platforms": {
+        "badge": "Available Platforms",
+        "title": "Shop on Your Favorite Platform",
+        "description": "Find our premium hunting and outdoor gear on various trusted e-commerce platforms. Trusted since {{year}}.",
+        "visitStore": "Visit Store",
+        "trustBadge": "Serving the Indonesian hunting and outdoor community since {{year}}",
+        "shopee": "Shop our products on Shopee",
+        "tokopedia": "Find us on Tokopedia",
+        "lazada": "Visit our store on Lazada",
+        "bukalapak": "Shop on Bukalapak",
+        "tiktokShop": "Explore our TikTok Shop",
+        "blibli": "Find our products on Blibli"
+    },
+    "contact": {
+        "title": "Get In Touch",
+        "description": "Have questions? We're here to help. Reach out to us via email or WhatsApp",
+        "email": {
+            "title": "Email Us",
+            "description": "Send a message anytime"
+        },
+        "whatsapp": {
+            "title": "WhatsApp",
+            "description": "Chat with us"
+        }
+    },
+    "contactCta": {
+        "title": "Contact Us",
+        "description": "Choose how you'd like to get in touch with us",
+        "ariaLabel": "Contact us"
+    },
+    "footer": {
+        "description": "Your trusted hunting and outdoor gear store in Indonesia. Quality equipment for every adventure.",
+        "established": "Established since",
+        "quickLinks": "Quick Links",
+        "navigation": "Navigation",
+        "platforms": "Platforms",
+        "openingHours": "Opening Hours",
+        "everyday": "Everyday",
+        "contactTitle": "Contact",
+        "copyright": "All rights reserved."
+    },
+    "language": {
+        "id": "Bahasa Indonesia",
+        "en": "English",
+        "switchLanguage": "Switch Language"
+    }
+}

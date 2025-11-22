@@ -1,21 +1,38 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 import {
     BUSINESS_NAME,
     BUSINESS_EMAIL,
     WHATSAPP_NUMBER,
     ESTABLISHED_YEAR,
     BUSINESS_HOURS,
-    BUSINESS_DAYS,
-    NAVIGATION_LINKS,
-    PLATFORMS,
 } from "@/lib/constants";
 
 export function Footer() {
+    const { t } = useTranslation();
+
+    const navigationLinks = [
+        { name: t("nav.home"), href: "#home" },
+        { name: t("nav.about"), href: "#about" },
+        { name: t("nav.platforms"), href: "#platforms" },
+        { name: t("nav.contact"), href: "#contact" },
+    ];
+
+    const platforms = [
+        { name: "Shopee", url: "#" },
+        { name: "Tokopedia", url: "#" },
+        { name: "Lazada", url: "#" },
+        { name: "Bukalapak", url: "#" },
+    ];
+
     return (
         <footer className="bg-muted/50 border-t">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+                    {/* Business Logo and Name */}
                     <div className="space-y-4">
                         <Link
                             href="/"
@@ -34,13 +51,11 @@ export function Footer() {
                             </span>
                         </Link>
                         <p className="text-sm text-muted-foreground max-w-xs">
-                            Toko perlengkapan berburu dan outdoor terpercaya di
-                            Indonesia. Peralatan berkualitas untuk setiap
-                            petualangan.
+                            {t("footer.description")}
                         </p>
                         <div className="pt-2">
                             <p className="text-sm font-medium text-foreground">
-                                Berdiri sejak{" "}
+                                {t("footer.established")}{" "}
                                 <span className="font-bold text-primary">
                                     {ESTABLISHED_YEAR}
                                 </span>
@@ -50,15 +65,15 @@ export function Footer() {
 
                     <div className="space-y-4">
                         <h3 className="font-semibold text-sm uppercase tracking-wider">
-                            Tautan Cepat
+                            {t("footer.quickLinks")}
                         </h3>
                         <div className="grid grid-cols-2 gap-4">
                             <div>
                                 <h4 className="font-medium text-sm mb-3">
-                                    Navigasi
+                                    {t("footer.navigation")}
                                 </h4>
                                 <ul className="space-y-2">
-                                    {NAVIGATION_LINKS.map((link) => (
+                                    {navigationLinks.map((link) => (
                                         <li key={link.name}>
                                             <Link
                                                 href={link.href}
@@ -72,10 +87,10 @@ export function Footer() {
                             </div>
                             <div>
                                 <h4 className="font-medium text-sm mb-3">
-                                    Platform
+                                    {t("footer.platforms")}
                                 </h4>
                                 <ul className="space-y-2">
-                                    {PLATFORMS.slice(0, 4).map((platform) => (
+                                    {platforms.map((platform) => (
                                         <li key={platform.name}>
                                             <a
                                                 href={platform.url}
@@ -92,14 +107,15 @@ export function Footer() {
                         </div>
                     </div>
 
+                    {/* Opening Hours */}
                     <div className="space-y-4">
                         <h3 className="font-semibold text-sm uppercase tracking-wider">
-                            Jam Operasional
+                            {t("footer.openingHours")}
                         </h3>
                         <div className="space-y-2 text-sm">
                             <div className="flex justify-between items-center">
                                 <span className="text-muted-foreground">
-                                    {BUSINESS_DAYS}
+                                    {t("footer.everyday")}
                                 </span>
                                 <span className="font-medium">
                                     {BUSINESS_HOURS}
@@ -107,7 +123,9 @@ export function Footer() {
                             </div>
                         </div>
                         <div className="pt-4 space-y-2">
-                            <p className="text-sm font-medium">Kontak</p>
+                            <p className="text-sm font-medium">
+                                {t("footer.contactTitle")}
+                            </p>
                             <p className="text-sm text-muted-foreground">
                                 {BUSINESS_EMAIL}
                             </p>
@@ -121,8 +139,8 @@ export function Footer() {
                 {/* Copyright */}
                 <div className="mt-8 pt-8 border-t">
                     <p className="text-center text-sm text-muted-foreground">
-                        © {new Date().getFullYear()} {BUSINESS_NAME}. Hak cipta
-                        dilindungi.
+                        © {new Date().getFullYear()} {BUSINESS_NAME}.{" "}
+                        {t("footer.copyright")}
                     </p>
                 </div>
             </div>
