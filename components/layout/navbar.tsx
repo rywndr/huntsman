@@ -12,19 +12,21 @@ import {
     SheetTrigger,
 } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
-import { BUSINESS_NAME, BUSINESS_MOTTO } from "@/lib/constants";
+import {
+    BUSINESS_NAME,
+    BUSINESS_MOTTO,
+    NAVIGATION_LINKS,
+} from "@/lib/constants";
 import { LanguageSwitcher } from "./language-switcher";
 
 export function Navbar() {
     const [open, setOpen] = useState(false);
     const { t } = useTranslation();
 
-    const navigationLinks = [
-        { name: t("nav.home"), href: "#home" },
-        { name: t("nav.about"), href: "#about" },
-        { name: t("nav.platforms"), href: "#platforms" },
-        { name: t("nav.contact"), href: "#contact" },
-    ];
+    const navigationLinks = NAVIGATION_LINKS.map((link, index) => ({
+        name: t(`nav.${["home", "about", "platforms", "contact"][index]}`),
+        href: link.href,
+    }));
 
     return (
         <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b">

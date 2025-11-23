@@ -4,45 +4,10 @@ import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
-import { ESTABLISHED_YEAR } from "@/lib/constants";
+import { ESTABLISHED_YEAR, PLATFORMS } from "@/lib/constants";
 
 export function Platforms() {
     const { t } = useTranslation();
-
-    const platforms = [
-        {
-            name: "Shopee",
-            logo: "/platforms/shopee.png",
-            description: t("platforms.shopee"),
-            url: "#",
-        },
-        {
-            name: "Tokopedia",
-            logo: "/platforms/tokopedia-logo.png",
-            mascot: "/platforms/tokopedia-mascot.png",
-            description: t("platforms.tokopedia"),
-            url: "#",
-        },
-        {
-            name: "Lazada",
-            logo: "/platforms/lazada.png",
-            description: t("platforms.lazada"),
-            url: "#",
-        },
-        {
-            name: "TikTok Shop",
-            logo: "/platforms/tiktok-shop.png",
-            description: t("platforms.tiktokShop"),
-            url: "#",
-            notice: true,
-        },
-        {
-            name: "Blibli",
-            logo: "/platforms/blibli.png",
-            description: t("platforms.blibli"),
-            url: "#",
-        },
-    ];
 
     return (
         <section
@@ -67,7 +32,7 @@ export function Platforms() {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {platforms.map((platform) => (
+                    {PLATFORMS.map((platform) => (
                         <div
                             key={platform.name}
                             className="group border-2 rounded-xl p-6 bg-card hover:shadow-xl hover:border-primary/20 transition-all duration-300 hover:-translate-y-1"
@@ -110,7 +75,16 @@ export function Platforms() {
                                         {platform.name}
                                     </h3>
                                     <p className="text-sm text-muted-foreground mb-3">
-                                        {platform.description}
+                                        {platform.name === "Shopee" &&
+                                            t("platforms.shopee")}
+                                        {platform.name === "Tokopedia" &&
+                                            t("platforms.tokopedia")}
+                                        {platform.name === "Lazada" &&
+                                            t("platforms.lazada")}
+                                        {platform.name === "TikTok Shop" &&
+                                            t("platforms.tiktokShop")}
+                                        {platform.name === "Blibli" &&
+                                            t("platforms.blibli")}
                                     </p>
                                     {platform.notice ? (
                                         <p className="text-xs text-muted-foreground mb-3 italic">

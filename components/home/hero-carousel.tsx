@@ -10,30 +10,10 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel";
+import { HERO_SLIDES } from "@/lib/constants";
 
 export function HeroCarousel() {
     const { t } = useTranslation();
-
-    const carouselSlides = [
-        {
-            src: "/hero-carousel/carousel-1.jpg",
-            alt: t("hero.slide1.subtitle"),
-            title: t("hero.slide1.title"),
-            subtitle: t("hero.slide1.subtitle"),
-        },
-        {
-            src: "/hero-carousel/carousel-2.jpg",
-            alt: t("hero.slide2.subtitle"),
-            title: t("hero.slide2.title"),
-            subtitle: t("hero.slide2.subtitle"),
-        },
-        {
-            src: "/hero-carousel/carousel-3.jpg",
-            alt: t("hero.slide3.subtitle"),
-            title: t("hero.slide3.title"),
-            subtitle: t("hero.slide3.subtitle"),
-        },
-    ];
 
     return (
         <section id="home" className="w-full pt-16">
@@ -52,12 +32,12 @@ export function HeroCarousel() {
                 className="w-full relative group"
             >
                 <CarouselContent className="ml-0">
-                    {carouselSlides.map((image, index) => (
+                    {HERO_SLIDES.map((image, index) => (
                         <CarouselItem key={index} className="pl-0">
                             <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px]">
                                 <Image
                                     src={image.src}
-                                    alt={image.alt}
+                                    alt={t(`hero.slide${index + 1}.subtitle`)}
                                     fill
                                     priority={index === 0}
                                     className="object-cover"
@@ -71,10 +51,10 @@ export function HeroCarousel() {
                                 {/* Text Overlay */}
                                 <div className="absolute inset-0 flex flex-col items-center justify-end pb-16 sm:pb-20 md:pb-24 lg:pb-32 text-white z-10 px-4">
                                     <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-2 sm:mb-4 text-center animate-fade-in">
-                                        {image.title}
+                                        {t(`hero.slide${index + 1}.title`)}
                                     </h1>
                                     <p className="text-sm sm:text-base md:text-xl lg:text-2xl text-center max-w-2xl animate-fade-in-delay">
-                                        {image.subtitle}
+                                        {t(`hero.slide${index + 1}.subtitle`)}
                                     </p>
                                 </div>
                             </div>
