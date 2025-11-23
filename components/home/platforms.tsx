@@ -30,16 +30,11 @@ export function Platforms() {
             url: "#",
         },
         {
-            name: "Bukalapak",
-            logo: "/platforms/bukalapak.png",
-            description: t("platforms.bukalapak"),
-            url: "#",
-        },
-        {
             name: "TikTok Shop",
             logo: "/platforms/tiktok-shop.png",
             description: t("platforms.tiktokShop"),
             url: "#",
+            notice: true,
         },
         {
             name: "Blibli",
@@ -71,7 +66,7 @@ export function Platforms() {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {platforms.map((platform) => (
                         <div
                             key={platform.name}
@@ -110,17 +105,24 @@ export function Platforms() {
                                     )}
                                 </div>
 
-                                <div className="flex-1 min-w-0">
+                                <div className="flex-1 min-w-0 flex flex-col">
                                     <h3 className="text-lg font-semibold mb-1">
                                         {platform.name}
                                     </h3>
-                                    <p className="text-sm text-muted-foreground mb-4">
+                                    <p className="text-sm text-muted-foreground mb-3">
                                         {platform.description}
                                     </p>
+                                    {platform.notice ? (
+                                        <p className="text-xs text-muted-foreground mb-3 italic">
+                                            * {t("platforms.tiktokNotice")}
+                                        </p>
+                                    ) : (
+                                        <div className="mb-3 h-5" />
+                                    )}
                                     <Button
                                         asChild
                                         size="sm"
-                                        className="w-full sm:w-auto"
+                                        className="w-full sm:w-auto mt-auto"
                                     >
                                         <a
                                             href={platform.url}

@@ -25,7 +25,6 @@ export function Footer() {
         { name: "Shopee", url: "#" },
         { name: "Tokopedia", url: "#" },
         { name: "Lazada", url: "#" },
-        { name: "Bukalapak", url: "#" },
     ];
 
     return (

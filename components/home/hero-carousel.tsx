@@ -65,8 +65,11 @@ export function HeroCarousel() {
                                 />
                                 <div className="absolute inset-0 bg-black/40" />
 
+                                {/* Gradiant for readability */}
+                                <div className="absolute inset-x-0 bottom-0 h-1/2 bg-linear-to-t from-black/70 to-transparent" />
+
                                 {/* Text Overlay */}
-                                <div className="absolute inset-0 flex flex-col items-center justify-center text-white z-10 px-4">
+                                <div className="absolute inset-0 flex flex-col items-center justify-end pb-16 sm:pb-20 md:pb-24 lg:pb-32 text-white z-10 px-4">
                                     <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-2 sm:mb-4 text-center animate-fade-in">
                                         {image.title}
                                     </h1>

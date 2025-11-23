@@ -4,7 +4,7 @@ export const BUSINESS_MOTTO = "Art of Hunting";
 export const ESTABLISHED_YEAR = 2009;
 
 // Contact info
-export const BUSINESS_EMAIL = "info@huntinggear.com";
+export const BUSINESS_EMAIL = "info@hunting-gear.net";
 export const WHATSAPP_NUMBER = "+62 823 8519 9720";
 export const WHATSAPP_LINK = "https://wa.me/6282385199720";
 
